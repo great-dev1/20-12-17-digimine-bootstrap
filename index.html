@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digimine</title>
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome 4.4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Nunito Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+  <!-- Poppins Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- <img src="assets/img/test-back.png" alt="" style="position: absolute; z-index: 99; top: 0; width: 100%;"> -->
+
+  <!-- Side Navbar -->
+  <div id="mySidenav" class="sidenav">
+    <img class="sidenav-top-img" src="assets/img/sidenav-back-top.png" alt="sidenav top image">
+    <span href="javascript:void(0)" class="close-btn d-block d-lg-none" onclick="closeNav()">&times;</span>
+    <a class="logo" href="#">
+      <img class="logo-img" src="assets/img/logo.png" alt="logo">
+    </a>
+
+    <div class="side-links">
+      <a class="side-link d-flex align-items-center">
+        <img class="side-link-img d-inline-block" src="assets/img/home-icon.png" alt="home icon">
+        <span class="side-link-text d-inline-block font-weight-bold">Dashboard</span>
+      </a>
+      <a class="side-link d-flex align-items-center">
+        <img class="side-link-img d-inline-block" src="assets/img/category-icon.png" alt="category icon">
+        <span class="side-link-text d-inline-block font-weight-bold">Categories</apan>
+      </a>
+      <a class="side-link d-flex align-items-center">
+        <img class="side-link-img d-inline-block" src="assets/img/regulatory-icon.png" alt="regulatory icon">
+        <span class="side-link-text d-inline-block font-weight-bold">Regulatory</span>
+      </a>
+      <a class="side-link d-flex align-items-center">
+        <img class="side-link-img d-inline-block" src="assets/img/non-regulatory-icon.png" alt="non regulatory icon">
+        <span class="side-link-text d-inline-block font-weight-bold">Non-Regualatory</span>
+      </a>
+      <a class="side-link d-flex align-items-center">
+        <img class="side-link-img d-inline-block" src="assets/img/miscellaneous-icon.png" alt="miscellaneous icon">
+        <span class="side-link-text d-inline-block font-weight-bold">Miscellaneous</span>
+      </a>
+      <a class="side-link d-flex align-items-center">
+        <img class="side-link-img d-inline-block" src="assets/img/users-icon.png" alt="users icon">
+        <span class="side-link-text d-inline-block font-weight-bold">Users</span>
+      </a>
+      <a class="side-link d-flex align-items-center">
+        <img class="side-link-img d-inline-block" src="assets/img/history-icon.png" alt="history icon">
+        <span class="side-link-text d-inline-block font-weight-bold">History</span>
+      </a>
+      <a class="side-link d-flex align-items-center">
+        <img class="side-link-img d-inline-block" src="assets/img/help-icon.png" alt="help icon">
+        <span class="side-link-text d-inline-block font-weight-bold">Help</span>
+      </a>
+    </div>
+
+    <div class="sidenav-bottom">
+      <img class="sidenav-bottom-img" src="assets/img/sidenav-back-bottom.png" alt="sidenav bottome image">
+      <div class="sidenav-bottom-btns">
+        <div class="js-btn d-inline-flex align-items-center white-back card-shadow">
+          <div class="js-circle white-text indigo-back">JS</div>
+          <div class="js-text font-weight-bold">My Profile</div>
+        </div>
+        <a class="power-btn d-inline-block white-back card-shadow">
+          <img src="assets/img/power-icon.png" alt="power icon">
+        </a>
+      </div>
+      <div class="sidenav-bottom-paragraph white-text">
+        <p class="copyright-text font-weight-bold">© minemagma 2020.</p>
+        <p>All Rights Reserved</p>
+      </div>
+    </div>
+
+  </div>
+
+  <main>
+    <span class="open-btn d-block d-lg-none" onclick="openNav()">&#9776;</span>
+    <img class="bell-icon" src="assets/img/bell.png" alt="bell">
+    
+    <!-- Top Section -->
+    <div class="top-section d-flex">
+      <i class="page-prev fa fa-angle-left"></i>
+
+      <div class="top-section-text">
+        <h5 class="page-title font-weight-bold indigo-text">Details</h5>
+        <span class="page-bread pink-text">Dashboard | </span>
+        <span class="page-bread indigo-text">Details</span>
+      </div>
+    </div>
+
+    <div class="main-container white-back">
+
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <div class="media">
+          <img class="user-img" src="assets/img/rajat.png" alt="Rajat Kapoor">
+          <div class="media-body">
+            <span class="float-right">
+              <label class="switch top-switch">
+                <input type="checkbox" checked>
+                <span class="slider round top-slider"></span>
+              </label>
+              <img class="three-dots" src="assets/img/three-dots.png" alt="three dots">
+            </span>
+
+            <h4 class="user-name font-weight-bold">Rajat Kapoor</h4>
+            <span class="user-num badge white-text pink-back">#0123456789</span>
+
+            <div class="row reviewer-row">
+              <div class="col-6 col-md-3">
+                <h6 class="review-title">Reviewer</h6>
+                <h6 class="review-text font-weight-bold indigo-text">Abhinandan Banerjee</h6>
+              </div>
+              <div class="col-6 col-md-3">
+                <h6 class="review-title">Lead Reviewer</h6>
+                <h6 class="review-text font-weight-bold indigo-text">Rupesh Bansal</h6>
+              </div>
+              <div class="col-6 col-md-3">
+                <h6 class="review-title">Categories</h6>
+                <h6 class="review-text font-weight-bold indigo-text">OTC</h6>
+              </div>
+              <div class="col-6 col-md-3">
+                <h6 class="review-title">Department</h6>
+                <h6 class="review-text font-weight-bold indigo-text">Minning</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Select Section -->
+      <div class="select-section text-center text-md-left">
+        <div class="row">
+          <div class="col-sm-7 col-md-5 col-xl-4">
+            <span class="select-title">Select Rule</span>
+
+            <div class="select-dropdown d-inline-flex align-items-center">
+              <span class="select-dropdown-text font-weight-bold">Rule A</span>
+              <span class="dropdown-badge badge badge-pill white-text pink-back">25</span>
+              <i class="dropdown-arrow fa fa-angle-down"></i>
+            </div>
+          </div>
+
+          <div class="col-sm-5 col-md-7 col-xl-8">
+            <div class="select-badges d-inline-flex align-items-center float-center">
+              <i class="select-prev fa fa-angle-left"></i>
+              <span class="badge number-badge number-badge-1">5(4)</span>
+              <span class="badge number-badge number-badge-2">5(4)</span>
+              <span class="badge number-badge number-badge-3">5(4)</span>
+              <span class="badge number-badge number-badge-1 d-md-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-2 d-md-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-3 d-md-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-1 d-lg-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-2 d-xl-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-3 d-xl-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-1 d-xl-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-2 d-xl-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-3 d-sl-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-1 d-sl-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-2 d-sl-block d-none">5(4)</span>
+              <span class="badge number-badge number-badge-3 d-sl-block d-none">5(4)</span>
+              <i class="select-next fa fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="dots-texts text-right">
+          <img class="dot-img" src="assets/img/dot1.png" alt="dot1">
+          <span class="dot-text font-weight-bold">Selected</span>
+          <img class="dot-img" src="assets/img/dot2.png" alt="dot2">
+          <span class="dot-text font-weight-bold">Completed</span>
+          <img class="dot-img" src="assets/img/dot3.png" alt="dot3">
+          <span class="dot-text font-weight-bold">Incomplete</span>
+        </div>
+      </div>
+
+      <!-- Rule Section -->
+      <div class="rule-section">
+        <div class="rule-top">
+          <span class="rule-bread font-weight-bold indigo-text">Section/Rules/Clause/Subclause No.</span>
+          <span class="badge number-badge number-badge-2">5(4)</span>
+        </div>
+
+        <div class="rule-detail">
+          <div class="rule-detail-item">
+            <h5 class="secondary-title">Title of The Rules/Regulations</h5>
+            <p class="secondary-text">Electrical Safety Officer</p>
+          </div>
+          <div class="rule-detail-item">
+            <h5 class="secondary-title">Responsibility</h5>
+            <p class="secondary-text">Owner/Agent/Manager</p>
+          </div>
+          <div class="rule-detail-item">
+            <h5 class="secondary-title">Description</h5>
+            <p class="secondary-text">
+              (4) For every factory registered under Factory Act,1948, where more than 250 kW of
+              electrical load is connected, the management of the factory shall designate a person having qualification
+              specified in sub-regulation (2), for ensuring the observance of the safety provisions laid under the Act
+              and the regulations made thereunder, who shall periodically inspect such installation, get them tested and
+              keep a record thereof and such records shall be made available to the Electrical Inspector if and when
+              required.
+            </p>
+          </div>
+          <div class="rule-detail-item">
+            <h5 class="secondary-title">Relevant Circulars</h5>
+            <p class="secondary-text">Owner/Agent/Manager</p>
+          </div>
+          <div class="rule-detail-item border-0">
+            <h5 class="secondary-title">Management Remarks <span class="small-text">[Oct 24,
+                2019]</span></h5>
+            <p class="secondary-text">NA</p>
+          </div>
+        </div>
+
+        <div class="review-tab">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#tab1">
+                <span class="d-none d-md-block">Reviewer Feedback</span>
+                <span class="d-block d-md-none">Reviewer</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab2">
+                <span class="d-none d-md-block">Lead Reviewer Feedback</span>
+                <span class="d-block d-md-none">Lead Reviewer</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content text-center">
+            <div id="tab1" class="tab-container tab-pane active">
+              <h5 class="secondary-title">Status Of The Conformity</h5>
+              <label class="switch text-switch">
+                <input type="checkbox" checked>
+                <span class="slider round text-slider">YES NO </span>
+              </label>
+              <div class="review-box white-back">
+                <div class="row review-row-1">
+                  <div class="letter-container col-6 col-md-3 p-0 mb-3 m-md-0">
+                    <div class="review-img-wrapper">
+                      <img class="review-img" src="assets/img/review-letter.png" alt="review letter">
+                      <div class="overlay">
+                        <div class="overlay-text">VIEW</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="letter-container col-6 col-md-3 p-0 mb-3 m-md-0">
+                    <div class="review-img-wrapper">
+                      <img class="review-img" src="assets/img/review-letter.png" alt="review letter">
+                      <div class="overlay">
+                        <div class="overlay-text">VIEW</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="letter-container col-6 col-md-3 p-0 mb-3 m-md-0">
+                    <div class="review-img-wrapper">
+                      <img class="review-img" src="assets/img/review-letter.png" alt="review letter">
+                      <div class="overlay">
+                        <div class="overlay-text">VIEW</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="letter-container col-6 col-md-3 p-0 mb-3 m-md-0">
+                    <div class="review-img-wrapper">
+                      <img class="review-img" src="assets/img/review-letter.png" alt="review letter">
+                      <div class="overlay">
+                        <div class="overlay-text">VIEW</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row review-row-2">
+                  <div class="letter-container col-6 col-md-3 p-0 mb-3 m-md-0">
+                    <div class="review-img-wrapper">
+                      <img class="review-img" src="assets/img/review-letter.png" alt="review letter">
+                      <div class="overlay">
+                        <div class="overlay-text">VIEW</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="letter-container col-6 col-md-3 p-0 mb-3 m-md-0">
+                    <div class="review-img-wrapper">
+                      <img class="review-img" src="assets/img/review-letter.png" alt="review letter">
+                      <div class="overlay">
+                        <div class="overlay-text">VIEW</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="letter-container col-6 col-md-3 p-0 mb-3 m-md-0">
+                    <div class="review-img-wrapper">
+                      <img class="review-img" src="assets/img/review-letter.png" alt="review letter">
+                      <div class="overlay">
+                        <div class="overlay-text">VIEW</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="letter-container col-6 col-md-3 p-0 mb-3 m-md-0">
+                    <div class="review-img-wrapper">
+                      <img class="review-img" src="assets/img/review-letter.png" alt="review letter">
+                      <div class="overlay">
+                        <div class="overlay-text">VIEW</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="level-text">
+                <h6 class="secondary-text float-right">Owner/Agent/Manager</h6>
+                <h5 class="secondary-title text-left">Level Of Non-Conformity</h5>
+              </div>
+
+              <div class="remark-paragraph">
+                <h5 class="remark-title secondary-title text-left">Reviewer Remarks</h5>
+                <p class="remark-text secondary-text text-left">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt velit vel nisl eleifend
+                  suscipit. Pellentesque nisl sapien, commodo vitae mollis quis, auctor vitae massa. In enim sem, aliquet
+                  vel elementum ornare, venenatis eget turpis. Cras egestas sodales fermentum.
+                </p>
+                <p class="date-text text-left">Oct 24, 2019</p>
+              </div>
+              
+            </div>
+            <div id="tab2" class="tab-container tab-pane fade">
+              <h5 class="secondary-title">Status Of The Conformity</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="footer-section">
+        <h6 class="submit-info">File Submit by : Rajat Kapoor 24 July, 2020 at 10:30 PM</h6>
+        <div class="pink-btn card-shadow">GENERATE REPORT</div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- jQuery 3.5 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper 1.16 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- My JavaScript -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
